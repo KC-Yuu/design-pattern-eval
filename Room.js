@@ -14,11 +14,4 @@ export default class Room {
         this.sensors.push(sensor);
     }
 
-    triggerAllSensors() {
-        this.sensors.forEach(sensor => sensor.detect());
-    }
-
-    getSensorCount() {
-        return this.sensors.length;
-    }
 }
